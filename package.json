@@ -17,7 +17,6 @@
     "koa-logger": "^3.2.1",
     "koa-router": "^8.0.8",
     "lodash": "^4.17.15",
-    "lowdb": "^1.0.0",
     "md5": "^2.2.1",
     "module-alias": "^2.2.2",
     "pouchdb": "^7.2.1",
