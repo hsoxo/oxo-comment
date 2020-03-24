@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+const port = require(`../config/${process.env.NODE_ENV}.config.js`).port || 3001
+
+let app = require('./app');
+
+const https = require('https')
+const fs = require('fs')
+const sslOptions = {
+  key: fs.readFileSync('./ssl/server.key'),
+  cert: fs.readFileSync('./ssl/server.pem')
+}
+
+https.createServer(sslOptions, app.callback()).listen(port, () => {
+  console.log('server start up at https://localhost:' + port)
+})

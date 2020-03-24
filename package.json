@@ -1,0 +1,29 @@
+{
+  "name": "oxo-comment",
+  "version": "1.0.0",
+  "description": "a lightweight pure javascript comment system backend",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hs",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "jwt-simple": "^0.5.6",
+    "koa": "^2.11.0",
+    "koa-body": "^4.1.1",
+    "koa-json-error": "^3.1.2",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^8.0.8",
+    "lodash": "^4.17.15",
+    "lowdb": "^1.0.0",
+    "md5": "^2.2.1",
+    "module-alias": "^2.2.2",
+    "pouchdb": "^7.2.1",
+    "pouchdb-find": "^7.2.1"
+  },
+  "_moduleAliases": {
+    "@": "./"
+  }
+}

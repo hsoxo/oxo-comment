@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+const port = require(`../config/${process.env.NODE_ENV}.config.js`).port || 3001
+
+let app = require('./app');
+
+app.listen(3001, () => {
+  console.log("server run on 127.0.0.1:3001");
+});
